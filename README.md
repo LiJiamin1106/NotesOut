@@ -1,5 +1,5 @@
 # NotesOut
-## 一、项目定位
+## 一、项目简介
 NotesOut 是一款基于大模型 LLM 的学习笔记生成工具，支持多类文件转 Markdown，再调用大模型自动生成结构化学习笔记，同时提供 GUI 可视化界面与 CLI 命令行双使用模式。
 ## 二、支持文件格式
 可解析 .ipynb、.py、.docx、.xlsx、.md、.txt、.html/.htm；不支持老式.xls，每种文件配套专属转换依赖库。
@@ -9,7 +9,7 @@ NotesOut 是一款基于大模型 LLM 的学习笔记生成工具，支持多类
 2. 统一转换入口（convert\[_all.py](_all.py)）：对外共用转换函数 convert_files_to_md，GUI/CLI 复用；
 3. 转换器包 converters/：每种文件独立转换器，共用 base 日志回调；
 4. LLM 处理层（generate\[_notes.py](_notes.py)）：构建提示词、统一封装多厂商 API 调用、保存生成笔记。
-日志统一机制
+### 日志统一机制
 通过可选log_fn回调区分两种输出：CLI 直接 print 打印，GUI 传入自定义日志函数写入界面日志面板。
 ## 四、完整业务流程
 1. 用户导入多格式文件 → 校验去重；
