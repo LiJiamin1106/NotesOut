@@ -2,7 +2,7 @@
 
 ## 项目概述
 
-NotesOut 是一款基于 LLM 的学习笔记生成工具，支持将多种格式的文件（Jupyter Notebook、Python、Word、Excel、Markdown、Text、HTML）转换为 Markdown，并调用大语言模型生成高质量的阶段性学习笔记。
+NotesOut 是一款基于 LLM 的学习笔记生成工具，支持将多种格式的文件（Jupyter Notebook、Python、Word、Excel、Text、HTML）转换为 Markdown，并调用大语言模型生成高质量的阶段性学习笔记。
 
 ## 设计思路
 
@@ -562,5 +562,6 @@ PROVIDERS = {
 
 ---
 
-*NotesOut - 让学习笔记生成更轻松*#   N o t e s O u t  
+*NotesOut - 让学习笔记生成更轻松*#   N o t e s O u t 
+ 
  
